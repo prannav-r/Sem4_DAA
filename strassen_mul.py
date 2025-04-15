@@ -17,7 +17,7 @@ def strassen(A:np.ndarray,B:np.ndarray):
     B21,B22 = B[mid:,:mid],B[mid:,mid:]
 
     M1 = strassen(A11 + A22, B11 + B22)
-    M2 = strassen(A21 + A22, B11)
+    M2 = strassen(B11,A21 + A22)
     M3 = strassen(A11, B12 - B22)
     M4 = strassen(A22, B21 - B11)
     M5 = strassen(A11 + A12, B22)
