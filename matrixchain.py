@@ -17,6 +17,9 @@ def matrix_chain_multiplication(dim):
             dp[i][j] = min_cost
 
     
+    
+
+    
 
     return dp[1][n]
 
